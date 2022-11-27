@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="formlar">
+        <div class="form m-4">
+          <div class="card" style="width: 24rem;">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-3 text-center">Pizza order</h6>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control user" placeholder="Username" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control phone" placeholder="Phone number" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control address" placeholder="User address" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+              <div class="text d-flex">
+                <h6 class="text m-1">Dough thickness:</h6>
+                <select class="m-2 form-select-sm" id="select" aria-label=".form-select example">
+                  <option class="text-center" selected>none</option>
+                  <option data-price="10" value="1">Thin</option>
+                  <option data-price="12" value="2">Medium</option>
+                  <option data-price="15" value="3">Thick</option>
+                </select>
+              </div>
+              <div class="d-flex">
+                <h4 class="text m-1">Size:</h4>
+                <div class="input-group flex-nowrap">
+                  <div class="d-flex gap-1"><label class="m-3" for="">25 sm</label><input type="radio" class="input" value="25" name="a"
+                 aria-label="Username" aria-describedby="addon-wrapping"></div>
+                  <div class="d-flex gap-1"><label class="m-3" for="">30 sm</label><input type="radio" class="input" value="30" name="a"
+                   aria-label="Username" aria-describedby="addon-wrapping"></div>
+                  <div class="d-flex gap-1"><label class="m-3" for="">35 sm</label><input type="radio" class="input" value="35" name="a"
+                     aria-label="Username" aria-describedby="addon-wrapping"></div>
+                </div>
+              </div>
+            </div>
+            <h5 class="m-3">On Pizaa:</h5>
+            <div class="on pizza d-flex">
+              <div class="form-check">
+                <div>
+                  <input class="form-check-input m-1 check1" type="checkbox" data-price="5" value="" id="Tomato">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Tomato
+                  </label>
+                </div>
+                <div>
+                  <input class="form-check-input m-1 check1" type="checkbox" value="" data-price="5" id="Turkeymeat">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Turkey meat
+                  </label>
+                </div>
+                <div>
+                  <input class="form-check-input m-1 check1" type="checkbox" value="" data-price="5" id="Olive">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Olive
+                  </label>
+                </div>
+              </div>
+
+
+
+              <div class="formdiv m-auto">
+                <div>
+                  <input class="form-check-input m-1 check1" type="checkbox" value="" data-price="5" id="Pickled cucumber">
+                  <label class="form-check-label " for="flexCheckDefault">
+                    Pickled cucumber
+                  </label>
+                </div>
+                <div>
+                  <input class="form-check-input m-1 check1" type="checkbox" value="" data-price="5" id="Mushroom">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Mushroom
+                  </label>
+                </div>
+                <div>
+                  <input class="form-check-input m-1 check1" type="checkbox" value="" data-price="5" id="Horse meat">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Horse meat
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <h5 class="text m-3"> ADD:</h5>
+            <div class="add d-flex m-1">
+              <div class="m-4">
+                <input class="form-check-input check2" type="checkbox" data-price="3" value="" id="Pepper">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Pepper
+                </label>
+              </div>
+              <div class="m-4">
+                <input class="form-check-input check2" type="checkbox" data-price="3" value="" id="Sausages">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sausages
+                </label>
+              </div>
+            </div>
+            <button id="submit" class="m-auto btn border bg-primary mb-4 w-25 h-25">
+              SAVE
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="mt-4 justify-content-center d-flex">
+        <div class="col-sm-4">
+          <div class="card carrd">
+            <!-- <div class="card-body">
+              <h5 class="card-title">Order: 1</h5>
+              <p class="card-text"><b>Name:</b> Qaxorov Qobil</p>
+              <p class="card-text"><b>Phone:</b> +99890 991-90-29</p>
+              <p class="card-text"><b>Address:</b> Sergeli Tumani Fayzli mahhallasi 7 uy</p> 
+              <hr>
+              <p class="card-text"><b>Dough thickness:</b> Medium</p>
+              <p class="card-text"><b>Size:</b> 25 sm</p>
+              <p class="card-text"><b>On Pizza:</b> Tomato Pickled Cucumber </p>
+              <p class="card-text"><b>ADD:</b> Pepper </p>
+              <hr>
+              <span><b>Total:</b> 45$</span>
+              
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+  <script src="./main.js">
+
+  </script>
+</body>
+
+</html>
